@@ -1,15 +1,12 @@
-var job;
-(function (job) {
-    job[job["AUTHOR"] = 0] = "AUTHOR";
-    job[job["STUDENT"] = 1] = "STUDENT";
-})(job || (job = {}));
-console.log(job.AUTHOR);
-var person = {
-    name: "leejaehoon",
-    age: 30,
-    hobbies: ["sports", "cooking"],
-    role: [2, "hi", 3]
+var combine = function (input1, input2) {
+    var result;
+    if (typeof input1 === "number" && typeof input2 === "number") {
+        result = input1 + input2;
+    }
+    else {
+        result = input1.toString() + input2.toString();
+    }
+    return result;
 };
-var ary;
-ary = ["ad", "dd"];
-console.log(person.name);
+var a = combine("Max", "Anna");
+console.log(a);
